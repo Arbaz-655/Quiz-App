@@ -12,8 +12,6 @@ const Home = ({name,setName,fetchQuestions}) => {
 
   const navigate = useNavigate();
 
-  {/*When all details are filled and Start Quiz is clicked , fetch the questions and move to Quiz Component*/}
-
   const handleSubmit = ()=>{
       if(!category || !difficulty || !name){
         setError(true);
